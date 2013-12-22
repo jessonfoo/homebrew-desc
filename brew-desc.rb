@@ -2056,6 +2056,7 @@ descriptions = {
   "samba" => "SMB/CIFS file, print, and login server for Unix",
   "sane-backends" => "Backends for scanner access",
   "sary" => "Suffix array library",
+  "sassc" => "Wrapper around libsass that helps to create command line apps",
   "savana" => "Transactional workspaces for SVN",
   "saxon" => "XSLT and XQuery processor",
   "saxon-b" => "XSLT and XQuery processor",
