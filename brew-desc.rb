@@ -2649,19 +2649,14 @@ else
   ARGV.formulae.each do |f|
     f = f.name
 
-    #   Tty.<color> variables are defined in:
-    #   HOMEBREW_LIBRARY_PATH/utils.rb
-    #
-    #   Note that many colors automatically come with
-    #   styling like bold and underline, etc.  Check
-    #   the definitions for details.
+    # Tty.<color> variables taken from HOMEBREW_LIBRARY_PATH/utils.rb
     if descriptions.key?(f)
       if descriptions[f].empty?
         puts <<-EOS.undent
           #{Tty.yellow}#{f}#{Tty.reset}: No description yet
 
           Please consider forking brew-desc and adding a description for
-          this and other formulas. There's plenty of work to do still.
+          this formula.
 
           https://github.com/telemachus/homebrew-desc/
         EOS
@@ -2670,11 +2665,12 @@ else
       end
     else
       opoo <<-EOS.undent
-        #{f} doesn't appear to be a formula from mxcl/master, which is all
-        that `brew desc` supports at this point.
+        #{f} doesn't appear to be a formula from homebrew/master, which is
+        all that `brew desc` supports at this point.
 
-        If you think that #{f} is in mxcl/master, please file an issue at
-        https://github.com/telemachus/homebrew-desc/issues and we'll check.
+        If you think that #{f} is in homebrew/master, please file an issue
+        at https://github.com/telemachus/homebrew-desc/issues and we'll
+        check.
       EOS
     end
   end
