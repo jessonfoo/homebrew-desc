@@ -2604,6 +2604,7 @@ descriptions = {
   "zshdb" => "Debugger for zsh",
   "zssh" => "Interactive file transfers over ssh",
   "zsync" => "File transfer program",
+  "zxcc" => "CP/M 2/3 emulator for cross-compiling and CP/M tools under Unix",
   "zzuf" => "zzuf is a transparent application input fuzzer",
 }
 
