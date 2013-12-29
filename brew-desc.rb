@@ -1501,6 +1501,7 @@ descriptions = {
   "minised" => "Smaller, cheaper, faster SED implementation",
   "miniupnpc" => "UpnP IGD client library and daemon",
   "minizinc" => "Medium-level constraint modelling language",
+  "minizip" => "C library for zip/unzip via zLib",
   "minuit2" => "Physics analysis tool for function minimization",
   "miredo" => "Teredo IPv6 tunneling through NATs",
   "mit-scheme" => "MIT/GNU Scheme development environment",
