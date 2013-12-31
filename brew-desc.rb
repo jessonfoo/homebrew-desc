@@ -2301,6 +2301,7 @@ descriptions = {
   "texwrapper" => "Run TeX and tools like BibTeX or MakeIndex together",
   "thc-pptp-bruter" => "Brute force program against pptp vpn endpoints (tcp port 1723)",
   "the_silver_searcher" => "Code-searching tool similar to ack",
+  "theharvester" => "Gather materials from public sources (for pen testers)",
   "theora" => "Open video compression format",
   "thrift" => "Framework for scalable cross-language services development",
   "thrulay" => "Measure performance of a network ",
