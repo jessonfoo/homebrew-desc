@@ -108,6 +108,7 @@ descriptions = {
   "at-spi2-atk" => "Accessibility Toolkit GTK+ module",
   "at-spi2-core" => "Protocol definitions and daemon for D-Bus at-spi",
   "atari++" => "Unix based emulator of the Atari eight bit computers",
+  "atdtool" => "Command-line interface for After the Deadline language checker",
   "aterm" => "AfterStep terminal emulator",
   "atf" => "ATF: Automated Testing Framework",
   "atk" => "GNOME accessibility toolkit",
