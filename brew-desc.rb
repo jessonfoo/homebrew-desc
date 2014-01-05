@@ -1449,6 +1449,7 @@ descriptions = {
   "makeicns" => "Create icns files from the command line",
   "makensis" => "System to create Windows installers",
   "makepp" => "Drop-in replacement for GNU make",
+  "mal4s" => "Malicious host finder based on gource",
   "malaga" => "Grammar development environment for natural languages",
   "malbolge" => "Deliberately difficult to program esoteric programming language",
   "man2html" => "Convert nroff man pages to HTML",
