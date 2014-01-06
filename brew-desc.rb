@@ -2595,6 +2595,7 @@ descriptions = {
   "zbar" => "Suite of tools for reading bar codes",
   "zdelta" => "Lossless delta compression library",
   "zebra" => "Information management system",
+  "zenity" => "Display dialog boxes for commandline and shell scripts",
   "zeromq" => "High-performance, asynchronous messaging library",
   "zile" => "Zile Is Lossy Emacs (ZILE)",
   "zinc" => "Stand-alone version of sbt's Scala incremental compiler",
