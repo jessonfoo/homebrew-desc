@@ -2561,6 +2561,7 @@ descriptions = {
   "xsw" => "Slide show presentation tool",
   "xtail"  => "Like `tail -f` but works on truncated files and directories",
   "xtitle" => "Set window title and icon name for X terminal",
+  "xulrunner" => "Mozilla runtime package to bootstrap XUL+XPCOM applications",
   "xvid" => "High-performance, high-quality MPEG-4 video library",
   "xz" => "General-purpose data compression with high compression ratio",
   "yacas" => "General purpose computer algebra system",
