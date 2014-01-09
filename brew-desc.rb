@@ -1298,6 +1298,7 @@ descriptions = {
   "libpgm" => "Implements the PGM reliable multicast protocol",
   "libplist" => "Library for Apple Binary- and XML-Property Lists",
   "libpng" => "Library for manipulating PNG images",
+  "libpoker-eval" => "C library to evaluate poker hands",
   "libpqxx" => "C++ connector for PostgreSQL",
   "libpst" => "Utilities for the PST file format",
   "libpuzzle" => "Library to find visually similar images",
