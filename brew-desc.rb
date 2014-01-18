@@ -2278,6 +2278,7 @@ descriptions = {
   "sysbench" => "System performance benchmark tool",
   "szip" => "Implementation of extended-Rice lossless compression algorithm",
   "szl" => "Compiler and runtime for the Sawzall language",
+  "t1lib" => "C library to generate/rasterize bitmaps from Type 1 fonts",
   "t1utils" => "Command line tools for dealing with Type 1 fonts",
   "ta-lib" => "Tools for market analysis",
   "tabbed" => "Virtual package provided by suckless-tools",
