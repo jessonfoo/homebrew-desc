@@ -1113,6 +1113,7 @@ descriptions = {
   "klavaro" => "Very flexible touch typing tutor",
   "knock" => "Port-knock server",
   "konoha" => "Simple, static and extensible scripting language",
+  "kqwait" => "Wait for events on files and directories on OSX",
   "kstart" => "Modified version of kinit that can use keytabs to authenticate",
   "ktoblzcheck" => "Library for German banks",
   "kumofs" => "Scalable, highly available distributed key-value store",
