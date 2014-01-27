@@ -2296,6 +2296,7 @@ descriptions = {
   "tarsnap" => "Online backups for the truly paranoid",
   "task-spooler" => "Batch system to run tasks one after another",
   "task" => "Feature-rich console based todo list manager",
+  "taskd" => "Client-server synchronization for todo lists",
   "tbb" => "Offers a rich and complete approach to parallelism in C++",
   "tcc" => "Tiny C compiler",
   "tclap" => "Templatized C++ command line parser library",
