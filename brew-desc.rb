@@ -196,6 +196,7 @@ descriptions = {
   "bison" => "Parser generator",
   "bitchx" => "BitchX IRC client",
   "bitlbee" => "IRC to other chat networks gateway",
+  "bittwist" => "Libcap-based Ethernet packet generator",
   "blahtexml" => "Converts equations into Math ML",
   "blazeblogger" => "CMS for the command line",
   "blitz" => "C++ class library for scientific computing",
