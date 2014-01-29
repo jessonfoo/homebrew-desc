@@ -102,6 +102,7 @@ descriptions = {
   "asciitex" => "Generate ASCII-art representations of mathematical equations",
   "asm6" => "6502 assembler",
   "asn1c" => "Compile ASN.1 specifications into C source code",
+  "aspcud" => "Package dependency solver",
   "aspell" => "Spell checker with better logic than ispell",
   "assimp" => "Portable library to import various well-known 3D model formats",
   "astyle" => "Source code beautifier for C, C++, C#, and Java",
