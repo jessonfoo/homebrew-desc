@@ -1978,6 +1978,7 @@ descriptions = {
   "rbenv-binstubs" => "Make rbenv aware of bundler binstubs",
   "rbenv-bundler" => "Makes shims aware of bundle install paths",
   "rbenv-communal-gems" => "Share gems across multiple rbenv Ruby installs",
+  "rbenv-ctags" => "Automatically generate ctags for rbenv Ruby stdlibs",
   "rbenv-default-gems" => "Auto-installs gems for Ruby installs",
   "rbenv-gem-rehash" => "Automatically runs `rbenv rehash`",
   "rbenv-gemset" => "Adds basic gemset support ",
