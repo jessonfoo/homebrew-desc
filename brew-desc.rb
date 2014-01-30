@@ -1355,6 +1355,7 @@ descriptions = {
   "libtess2" => "Refactored version of GLU tesselator",
   "libtextcat" => "N-gram-based text categorization library",
   "libtiff" => "TIFF library and utilities",
+  "libtomcrypt" => "Modular and portable cryptographic toolkit",
   "libtommath" => "C library for number theoretic multiple-precision integers",
   "libtool" => "Generic library support script",
   "libtorrent-rasterbar" => "C++ bittorrent library by Rasterbar Software",
