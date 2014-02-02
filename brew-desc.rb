@@ -1371,7 +1371,6 @@ descriptions = {
   "libupnp" => "Portable UPnP development kit",
   "libusb-compat" => "Library for USB device access",
   "libusb" => "Library for USB device access",
-  "libusbx" => "Library providing generic access to USB devices",
   "libusrsctp" => "User-land SCTP stack",
   "libutf" => "Port of Plan 9's support library for UTF-8 and Unicode",
   "libuv" => "Platform layer for node.js",
