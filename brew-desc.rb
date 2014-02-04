@@ -253,6 +253,7 @@ descriptions = {
   "camlp5" => "Camlp5 is a preprocessor-pretty-printer of OCaml",
   "cantera" => "Toolkit for chemical kinetics, thermodynamics, and transport processes",
   "capnp" => "Fast data interchange format and capability-based RPC system",
+  "capstone" => "Multi-platform, multi-architecture disassembly framework",
   "cardpeek" => "Read the contents of ISO7816 smart cards",
   "casperjs" => "Navigation scripting & testing tool for PhantomJS, written in Javascript",
   "cassandra" => "Highly scalable, eventually consistent, distributed key-value store",
