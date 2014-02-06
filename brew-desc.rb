@@ -231,6 +231,7 @@ descriptions = {
   "bulk_extractor" => "Stream-based forensics tool",
   "bullet" => "Physics SDK",
   "bup" => "Backup tool",
+  "burl" => "Shell script wrapper for curl(1), offering some helpful shortcuts",
   "burp" => "Network backup and restore",
   "bvi" => "Vi-like binary file (hex) editor",
   "bwm-ng" => "Small and simple bandwidth monitor",
