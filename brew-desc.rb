@@ -256,6 +256,7 @@ descriptions = {
   "capnp" => "Fast data interchange format and capability-based RPC system",
   "capstone" => "Multi-platform, multi-architecture disassembly framework",
   "cardpeek" => "Read the contents of ISO7816 smart cards",
+  "cask" => "Emacs dependency management made easy",
   "casperjs" => "Navigation scripting & testing tool for PhantomJS, written in Javascript",
   "cassandra" => "Highly scalable, eventually consistent, distributed key-value store",
   "catdoc" => "Convert Word/Excel documents to ASCII or TeX",
