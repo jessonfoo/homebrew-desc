@@ -353,6 +353,7 @@ descriptions = {
   "cmockery" => "Unit testing and mocking library for C",
   "cmu-pocketsphinx" => "Lightweight speech recognition engine for mobile devices",
   "cmu-sphinxbase" => "Lightweight speech recognition engine for mobile devices",
+  "cmuclmtk" => "Language model tools (from CMU Sphinx)",
   "cmus" => "Music player - ncurses based",
   "cntlm" => "Fast NTLM authentication proxy with tunneling",
   "coccinelle" => "Program matching and transformation engine for C code",
