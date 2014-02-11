@@ -152,6 +152,7 @@ descriptions = {
   "aws-iam-tools" => "Client for Amazon Identity and Access Management web service",
   "aws-sns-cli" => "Client for Amazon Simple Notification web service",
   "axel" => "Light UNIX download accelerator",
+  "b43-fwcutter" => "Extract firmware from Braodcom 43xx driver files",
   "babeld" => "Loop-avoiding distance-vector routing protocol",
   "babl" => "Dynamic, any to any, pixel format translation library",
   "backupninja" => "Backup automation tool",
