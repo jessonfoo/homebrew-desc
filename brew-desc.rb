@@ -863,6 +863,7 @@ descriptions = {
   "gpgme" => "Library for easy acces to GnuPG",
   "gphoto2" => "Command line interface to libgphoto2",
   "gplcver" => "Pragmatic C Software GPL Cver 2001",
+  "gpm" => "Barebones dependency manager for Go",
   "gpp" => "General-purpose preprocessor with customizable syntax",
   "gpredict" => "Real-time satellite tracking and orbit prediction",
   "gpsbabel" => "GPSBabel converts/uploads GPS waypoints, tracks, and routes",
