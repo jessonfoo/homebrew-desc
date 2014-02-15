@@ -2545,6 +2545,7 @@ descriptions = {
   "whirr" => "Set of libraries for running cloud services",
   "whohas" => "Query multiple distributions' package archives",
   "wiggle" => "Program for applying patches with conflicting changes",
+  "wildfly-as" => "Managed application runtime for building applications",
   "wimlib" => "Library to create, extract, and modify Windows Imaging files",
   "wine" => "Wine Is Not an Emulator",
   "winetricks" => "Download and install various runtime libraries",
