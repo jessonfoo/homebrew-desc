@@ -2071,6 +2071,7 @@ descriptions = {
   "rinetd" => "Internet TCP redirection server",
   "ringojs" => "CommonJS-based JavaScript runtime",
   "ripmime" => "Extract attachments out of MIME encoded email packages",
+  "rkhunter" => "Rootkit hunter",
   "rlog" => "Flexible message logging facility for C++",
   "rlwrap" => "Readline wrapper",
   "rmcast" => "IP Multicast library",
