@@ -1200,6 +1200,7 @@ descriptions = {
   "libbluray" => "Blu-Ray disc playback library for media players like VLC",
   "libbs2b" => "Bauer stereophonic-to-binaural DSP",
   "libbson" => "BSON utility library",
+  "libbtbb" => "Bluetooth baseband decoding library",
   "libcaca" => "Colour ASCII Art library",
   "libcapn" => "C library to send push notifications to Apple devices",
   "libcddb" => "CDDB server access library",
