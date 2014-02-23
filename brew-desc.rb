@@ -1504,6 +1504,7 @@ descriptions = {
   "mapserver" => "Publish spatial data and interactive mapping apps to the web",
   "mariadb" => "Drop-in replacement for MySQL",
   "markdown" => "Text-to-HTML conversion tool",
+  "marst" => "Algol-to-C translator",
   "masscan" => "TCP port scanner, scans entire Internet in under 5 minutes",
   "matlab2tikz" => "Convert MATLAB(R) figures into TikZ/Pgfplots figures",
   "maven-shell" => "CLI interface for Maven",
