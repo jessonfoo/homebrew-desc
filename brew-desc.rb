@@ -1336,6 +1336,7 @@ descriptions = {
   "libopkele" => "C++ implementation of OpenID decentralized identity system",
   "libosip" => "Implementation of the eXosip2 stack",
   "libotr" => "Off-The-Record (OTR) messaging library",
+  "libowfat" => "Reimplements libdjb",
   "libp11" => "PKCS#11 wrapper library in C",
   "libpano" => "Build panoramic images from a set of overlapping images",
   "libpcl" => "C library and API for coroutines",
