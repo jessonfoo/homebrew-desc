@@ -1959,6 +1959,7 @@ descriptions = {
   "pxz" => "Compression utility",
   "py2cairo" => "Python 2 bindings for the Cairo graphics library",
   "py3cairo" => "Python 3 bindings for the Cairo graphics library",
+  "pyenv-pip-rehash" => "Never run `pyenv rehash` again",
   "pyenv-virtualenv" => "Pyenv plugin to manage virtualenv",
   "pyenv" => "Python version management",
   "pyexiv2" => "Python binding to exiv2 for manipulation of image metadata",
