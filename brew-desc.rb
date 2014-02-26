@@ -334,6 +334,7 @@ descriptions = {
   "clean" => "Search for files matching a regex and delete them",
   "clens" => "Library to help port code from OpenBSD to other operating systems",
   "clhep" => "Class Library for High Energy Physics",
+  "clib" => "Package manager for C programming",
   "cliclick" => "Tool for automating emulated mouse clicks",
   "clipper" => "Share OSX clipboard with tmux and other local and remote apps",
   "clipsafe" => "Commandline interface to Password Safe",
