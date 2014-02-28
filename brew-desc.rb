@@ -765,6 +765,7 @@ descriptions = {
   "geos" => "GEOS Geometry Engine",
   "geoserver" => "Java server to share and edit geospatial data",
   "gerbv" => "Gerber file viewer for PCB design",
+  "getdns" => "Modern asynchronous DNS API",
   "getmail" => "Extensible mail retrieval system with POP3, IMAP4, SSL support",
   "gettext" => "GNU internationalization (i18n) and localization (l10n) library",
   "getxbook" => "Tools to download ebooks from various sources",
