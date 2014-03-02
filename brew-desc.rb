@@ -2576,7 +2576,6 @@ descriptions = {
   "winetricks" => "Download and install various runtime libraries",
   "winexe" => "Remote Windows-command executor",
   "wireshark" => "Graphical network analyzer and capture tool",
-  "wkhtmltopdf" => "Command line utility to convert html to pdf using WebKit",
   "wla-dx" => "Yet another cross-assembler package",
   "wmctrl" => "Control an EWMH/NetWM compatible X Window Manager",
   "wopr" => "Memory-based word prediction and language modeling",
