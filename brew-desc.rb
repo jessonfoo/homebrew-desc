@@ -2601,6 +2601,7 @@ descriptions = {
   "wv2" => "Programs for accessing Microsoft Word documents",
   "wwwoffle" => "Better browsing for computers with intermittent connections",
   "wxmac" => "wxWidgets, a cross-platform C++ GUI toolkit, for OSX",
+  "wxpython" => "Python bindings for wxWidgets",
   "wy60" => "Wyse 60 compatible terminal emulator",
   "wyrd" => "Front-end for remind - ncurses based",
   "x11vnc" => "VNC server for real X displays",
