@@ -984,6 +984,7 @@ descriptions = {
   "hoedown" => "Secure Markdown processing in C (a revived fork of Sundown)",
   "homebank" => "Manage your personal accounts at home",
   "honeyd" => "Daemon to create virtual hosts simulating their services and behaviour",
+  "horndis" => "USB tethering driver for Mac OS X",
   "hornetq" => "Multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system",
   "hostdb" => "Generate DNS zones and DHCP configuration from hostlist.txt",
   "hping" => "Command-line oriented TCP/IP packet assembler/analyzer",
