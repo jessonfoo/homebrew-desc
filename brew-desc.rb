@@ -731,6 +731,7 @@ descriptions = {
   "fuseki" => "SPARQL server",
   "fuzzy-find" => "Fuzzy filename finder that matches across directories as well as files",
   "fwknop" => "Single Packet Authorization and Port Knocking",
+  "fzf" => "Fuzzy finder for your shell",
   "g2" => "Friendly git client",
   "gabedit" => "GUI to computational chemistry packages like Gamess-US, Gaussian, etc.",
   "gaffitter" => "Efficiently fits files/folders to Volumes of fixed size (like DVD)",
