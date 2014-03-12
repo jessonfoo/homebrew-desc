@@ -1376,6 +1376,7 @@ descriptions = {
   "librtlsdr" => "Use Realtek DVT-T dongles as a cheap SDR",
   "libsamplerate" => "Library for sample rate conversion of audio data",
   "libsass" => "C implementation of a Sass compiler",
+  "libscrypt" => "Library for scrypt",
   "libshout" => "Data and connectivity library for the icecast server",
   "libsigc++" => "Callback framework for C++",
   "libsigsegv" => "Library for handling page faults in user mode",
