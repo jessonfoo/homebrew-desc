@@ -1876,6 +1876,7 @@ descriptions = {
   "pianobar" => "Console-based pandora.com player",
   "picoc" => "C interpreter for scripting",
   "picocom" => "Minimal dump-terminal emulation program",
+  "pidcat" => "Colored logcat script to show entries only for specified app",
   "pidgin" => "Chat client",
   "pidof" => "Display the PID number for a given process name",
   "pig" => "Platform for analyzing large data sets",
