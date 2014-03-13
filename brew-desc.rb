@@ -805,6 +805,7 @@ descriptions = {
   "git-integration" => "Easily manage git integration branches",
   "git-multipush" => "Push a branch to multiple remotes in one command",
   "git-now" => "Light, temporary commits for git",
+  "git-open" => "Open GitHub webpages from a terminal",
   "git-sh" => "Customized Bash environment for git work",
   "git-ssh" => "Proxy to serve git repositories over ssh",
   "git-tf" => "Share changes between TFS and git",
