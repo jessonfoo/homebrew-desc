@@ -1572,6 +1572,7 @@ descriptions = {
   "minbif" => "IRC-to-other-IM-networks gateway using Pidgin library",
   "minicom" => "Menu-driven communications program",
   "minidjvu" => "DjVu multipage encoder, single page encoder/decoder",
+  "minidlna" => "Media server software, compliant with DLNA/UPnP-AV clients",
   "minimodem" => "General-purpose software audio FSK modem",
   "minisat" => "Boolean satisfiability (SAT) problem solver",
   "minised" => "Smaller, cheaper, faster SED implementation",
