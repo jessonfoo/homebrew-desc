@@ -1827,6 +1827,7 @@ descriptions = {
   "pathfinder" => "Relational XQuery processor",
   "pax-construct" => "Tools to setup and develop OSGi projects quickly",
   "pax-runner" => "Tool to provision OSGi bundles",
+  "pazpar2" => "Metasearching middleware webservice",
   "pbc-sig" => "Signatures library",
   "pbc" => "Pairing-based cryptography",
   "pbrt" => "Physically based rendering",
