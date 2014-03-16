@@ -2298,6 +2298,7 @@ descriptions = {
   "sqlcipher" => "SQLite extension providing 256-bit AES encryption",
   "sqlite" => "Command line interface for SQLite",
   "sqliteman" => "GUI tool for Sqlite3",
+  "sqlmap" => "Penetration testing for SQL injection and database servers",
   "sqoop" => "Transfer bulk data between Hadoop and structured datastores",
   "sqsh" => "Sybase Shell",
   "squashfs" => "Compressed read-only file system for Linux",
