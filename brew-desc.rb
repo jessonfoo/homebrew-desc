@@ -2069,6 +2069,7 @@ descriptions = {
   "rcs" => "GNU revision control system",
   "rcsslogplayer" => "Replay games logged by RoboCup Soccer Simulator",
   "rcssmonitor" => "Monitor live RoboCup Soccer Simulator games",
+  "rcssserver" => "Server for RoboCup Soccer Simulator",
   "rdate" => "Set the system's date from a remote host",
   "rdesktop" => "Client for Windows Terminal Server",
   "rdfind" => "Find duplicate files (based on content NOT file names)",
