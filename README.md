@@ -63,10 +63,11 @@ The following people have also contributed to the project:
 
 + [Ismail Badawi](https://github.com/isbadawi)
 + [coruus](https://github.com/coruus)
++ [Sietse de Kaper](https://github.com/targeter)
++ [Misty De Meo](https://github.com/mistydemeo)
 + [Magnus Holm](https://github.com/judofyr)
 + [Gregory Igelmund](https://github.com/grekko)
 + [Jeroen](https://github.com/osscca)
-+ [Sietse de Kaper](https://github.com/targeter)
 + [Steve Mayer](https://github.com/mayersj1)
 + [Max Nordlund](https://github.com/maxnordlund)
 + [Christian Schwang](https://github.com/CSchwang)
