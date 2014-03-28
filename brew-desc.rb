@@ -1503,6 +1503,7 @@ descriptions = {
   "luvit" => "Asynchronous I/O for Lua",
   "lv" => "Powerful multi-lingual file viewer/grep",
   "lv2" => "Portable plugin standard for audio systems",
+  "lwtools" => "Cross-development tools for Motorola 6809 and Hitachi 6309 microprocessors",
   "lxsplit" => "Tool for splitting or joining files",
   "lynis" => "Security and system auditing tool to harden systems",
   "lynx" => "Text-based web browser",
