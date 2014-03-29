@@ -1930,6 +1930,7 @@ descriptions = {
   "plustache" => "C++ port of Mustache templating system",
   "plzip" => "Data compressor",
   "pmccabe" => "Calculate McCabe-style cyclomatic complexity for C/C++ code",
+  "pmd" => "Source code analyzer for Java, JavaScript and more",
   "pmdmini" => "Plays music in PC-88/98 PMD chiptune format",
   "pms" => "Practical Music Search, an ncurses-based MPD client",
   "png++" => "C++ wrapper for libpng library",
