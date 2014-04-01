@@ -1878,6 +1878,7 @@ descriptions = {
   "percona-server" => "Drop-in MySQL replacement",
   "percona-toolkit" => "Percona Toolkit for MySQL",
   "perl-build" => "Perl builder",
+  "perlmagick" => "Objected-oriented Perl interface to ImageMagick",
   "pev" => "PE analysis toolkit",
   "pg_top" => "Monitor PostgreSQL processes",
   "pgbadger" => "Log analyzer for PostgreSQL",
