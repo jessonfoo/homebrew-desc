@@ -2164,6 +2164,7 @@ descriptions = {
   "rush" => "Restricted user shell (GNU)",
   "rust" => "Safe, concurrent, practical language",
   "rxvt-unicode" => "Unicode-aware rxvt clone",
+  "ry" => "Ruby virtual env tool",
   "rzip" => "File compression tool (like gzip or bzip2)",
   "s-lang" => "Library designed to create multi-platform software",
   "s3-backer" => "FUSE-based single file backing store via Amazon S3",
