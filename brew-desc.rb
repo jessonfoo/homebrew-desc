@@ -1431,6 +1431,7 @@ descriptions = {
   "libuv" => "Platform layer for node.js",
   "libuvc" => "Cross-platform library for USB video devices",
   "libvbucket" => "Utility library providing mapping to virtual buckets",
+  "libvidstab" => "Transcode video stabilization plugin",
   "libvirt" => "C virtualization API",
   "libvo-aacenc" => "VisualOn AAC encoder library",
   "libvoikko" => "Linguistic software for Finnish",
