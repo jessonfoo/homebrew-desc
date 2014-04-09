@@ -1989,6 +1989,7 @@ descriptions = {
   "ps2eps" => "Convert PostScript to EPS files",
   "psftools" => "Tools for fixed-width bitmap fonts",
   "psgrep" => "Shell script to help with the 'ps aux | grep' idiom",
+  "psqlodbc" => "Official PostgreSQL ODBC driver",
   "pssh" => "Parallel versions of OpenSSH and related tools",
   "pstoedit" => "Convert PostScript and PDF files to editable vector graphics",
   "pstree" => "Show the ps command's output as a tree",
