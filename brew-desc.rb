@@ -2392,6 +2392,7 @@ descriptions = {
   "synfig" => "Command line renderer",
   "synfigstudio" => "Vector-based 2D animation package",
   "sysbench" => "System performance benchmark tool",
+  "sysdig" => "System-level exploration tool",
   "szip" => "Implementation of extended-Rice lossless compression algorithm",
   "szl" => "Compiler and runtime for the Sawzall language",
   "t1lib" => "C library to generate/rasterize bitmaps from Type 1 fonts",
