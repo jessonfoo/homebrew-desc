@@ -125,7 +125,6 @@ descriptions = {
   "aubio" => "Extract annotations from audio signals",
   "auctex" => "Extensible package for writing and formatting TeX files in Emacs",
   "audiofile" => "Reads and writes many common audio file formats",
-  "augeas" => "Configuration editing tool",
   "authexec" => "Start a GUI application with elevated permisions",
   "auto-scaling" => "Client interface to the Amazon Auto Scaling web service",
   "autobench" => "Automatic webserver benchmark tool",
