@@ -1616,6 +1616,7 @@ descriptions = {
   "mmv" => "Move/Copy/Append/Link multiple files",
   "mobile-shell" => "Remote terminal application",
   "moc" => "Terminal-based music player",
+  "modules" => "Dynamic modification of a user's environment via modulefiles",
   "mogenerator" => "Generate Objective-C code for core data custom classes",
   "mon" => "Monitor hosts/services/whatever and alert about problems",
   "monetdb" => "Column-store database",
