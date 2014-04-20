@@ -3,7 +3,7 @@ require 'formula'
 class BrewDesc < Formula
   homepage 'https://github.com/telemachus/homebrew-desc/'
   url 'git://github.com/telemachus/homebrew-desc.git'
-  version '0.9.99'
+  version '0.9.100'
 
   skip_clean 'bin'
 
