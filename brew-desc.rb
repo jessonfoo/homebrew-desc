@@ -2444,6 +2444,7 @@ descriptions = {
   "tesseract" => "OCR (Optical Character Recognition) engine",
   "testdisk" => "TestDisk is a powerful free data recovery utility",
   "tetgen" => "Quality Tetrahedral Mesh Generator",
+  "tevent" => "Event system based on the talloc memory management library",
   "texapp" => "App.net client based on TTYtter",
   "texi2html" => "Convert Texinfo files to HTML",
   "texinfo" => "Official documentation format of the GNU project",
