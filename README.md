@@ -79,9 +79,12 @@ The following people have also contributed to the project:
 
 ## Contributing
 
-All formulas now have descriptions. However, many could probably use better
-(clearer, more precise) descriptions. Please fork, edit one or more
-descriptions and send a pull request.
+All formulas now have descriptions. However, many could probably be
+improved to be clearer or more precise. There are also probably typos and
+[flat-out mistakes][oops]. If you want to help, please fork, edit one or
+more descriptions and send a pull request.
+
+[oops]: https://github.com/telemachus/homebrew-desc/issues/47
 
 The most important style rule: Please keep descriptions &lt; 80 characters.
 That will make the output neater in standard terminal windows.
