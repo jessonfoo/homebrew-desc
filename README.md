@@ -12,6 +12,10 @@ not sure which one, brew-desc is for you.
 
 ## Usage
 
+Although the script's name is `brew-desc.rb`, [Homebrew external
+commands][ec] work in such a way that you invoke it as `brew desc`. (It
+functions exactly like a sub-command built into Homebrew.)
+
 If you already know the name of a package, and you want to see a bit about
 it, that's easy:
 
@@ -27,12 +31,17 @@ specific items, that's easy too:
     cassandra: Highly scalable, eventually consistent, distributed key-value store
 
 Both `-s` and `--search` are acceptable. Searches are always case
-insensitive. (Notice that as a Homebrew [external command][ec], you invoke
-the script as `brew desc`.)
+insensitive, and the argument you pass to `-s` or `--search` is interpreted
+as a Ruby regular expression. So you can even do silly searches like this:
+
+    $ brew desc -s 'm\b'
+    abnfgen: Quickly generate random documents that match an ABFN grammar
+    aescrypt: Program for encryption/decryption
+    ...<way too much output>
 
 ## Installation
 
-You can now install `brew desc` in two ways.
+You can install `brew desc` in two ways.
 
 1. Tap this repository and install via `brew` itself.
 1. Install manually.
