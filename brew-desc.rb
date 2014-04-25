@@ -438,7 +438,6 @@ descriptions = {
   "cunit" => "A lightweight Unit Testing Framework for C",
   "cups-pdf" => "Print-to-PDF feature through CUPS",
   "curaengine" => "C++ 3D printing GCode generator",
-  "curl-ca-bundle" => "CA certs for CURL",
   "curl" => "Get a file from an HTTP, HTTPS or FTP server",
   "curlftpfs" => "File system to access FTP hosts based on FUSE and cURL",
   "cutter" => "Disconnect routed IP connections",
