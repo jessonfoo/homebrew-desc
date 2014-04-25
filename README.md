@@ -2,11 +2,13 @@
 
 ## What is it?
 
-It's an [external
-command](https://github.com/mxcl/homebrew/wiki/External-Commands) for
-[Homebrew](https://github.com/mxcl/homebrew). It provides short
-descriptions for many Homebrew packages, and I hope to eventually include
-*all* Homebrew packages. You can also search for packages by description.
+It's an [external command][ec] for [Homebrew][h]. It provides short
+descriptions for Homebrew packages. You can also search for packages by
+description. So if you know you want to install a mail program, but you're
+not sure which one, brew-desc is for you.
+
+[ec]: https://github.com/mxcl/homebrew/wiki/External-Commands
+[h]: https://github.com/mxcl/homebrew
 
 ## Usage
 
@@ -25,9 +27,8 @@ specific items, that's easy too:
     cassandra: Highly scalable, eventually consistent, distributed key-value store
 
 Both `-s` and `--search` are acceptable. Searches are always case
-insensitive. (Notice that as a Homebrew [external
-command](https://github.com/mxcl/homebrew/wiki/External-Commands), you
-invoke the script as `brew desc`.)
+insensitive. (Notice that as a Homebrew [external command][ec], you invoke
+the script as `brew desc`.)
 
 ## Installation
 
@@ -55,9 +56,8 @@ described above.
 
 I started this project with the descriptions from the
 [MacPorts](http://www.macports.org/) ports tree. I also used the
-[Debian](http://www.debian.org/) package descriptions to fill in many
-missing descriptions. I have edited both sources in many cases for
-consistency and length.
+[Debian](http://www.debian.org/) package descriptions. In both cases,
+I edited many items for consistency and length.
 
 The following people have also contributed to the project:
 
@@ -79,12 +79,18 @@ The following people have also contributed to the project:
 
 ## Contributing
 
-There are still many, many items without descriptions.
+All formulas now have descriptions. However, many could probably use better
+(clearer, more precise) descriptions. Please fork, edit one or more
+descriptions and send a pull request.
 
-Please fork, add descriptions (or edit the ones already here) and send
-a pull request.
-
-One style rule for the descriptions: Please keep them &lt; 80 characters.
+The most important style rule: Please keep descriptions &lt; 80 characters.
 That will make the output neater in standard terminal windows.
+
+A less important guideline: Please trim out boilerplate. For example,
+nearly all commandline tools claim to be small, simple and fast. I learned
+this by editing thousands of descriptions for this project. Let's just
+agree that Homebrew installs small, simple and fast as the norm. But feel
+free to mention if the package you're describing is large, complicated or
+slow.
 
 Thanks.
