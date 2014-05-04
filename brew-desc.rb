@@ -1022,7 +1022,6 @@ descriptions = {
   "httrack" => "Website copier/offline browser",
   "hub" => "CLI tool that wraps git to make working with GitHub easier",
   "hubflow" => "GitFlow for GitHub",
-  "hugs98" => "Virtual package provided by hugs",
   "hunspell" => "Spell checker and morphological analyzer",
   "hydra" => "Very fast network logon cracker which supports many services",
   "hyperestraier" => "Full-text search system for communities",
