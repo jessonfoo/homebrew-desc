@@ -212,6 +212,7 @@ descriptions = {
   "blitz" => "C++ class library for scientific computing",
   "blitzwave" => "C++ wavelet library",
   "blueutil" => "Get/set bluetooth power and discoverable state",
+  "bmake" => "Portable version of NetBSD make(1)",
   "bmon" => "Interface bandwidth monitor",
   "bochs" => "IA-32 (x86) PC emulator",
   "bogofilter" => "Mail filter via statistical analysis",
