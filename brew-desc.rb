@@ -1915,6 +1915,7 @@ descriptions = {
   "perl-build" => "Perl builder",
   "perlmagick" => "Objected-oriented Perl interface to ImageMagick",
   "pev" => "PE analysis toolkit",
+  "pex" => "Package manager for PostgreSQL",
   "pg_top" => "Monitor PostgreSQL processes",
   "pgbadger" => "Log analyzer for PostgreSQL",
   "pgbouncer" => "Lightweight connection pooler for PostgreSQL",
