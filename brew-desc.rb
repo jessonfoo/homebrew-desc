@@ -1169,6 +1169,7 @@ descriptions = {
   "jsvc" => "Wrapper to launch Java applications as daemons",
   "judy" => "C library that implements a sparse dynamic array",
   "juise" => "JUNOS user interface scripting environment",
+  "juju-quickstart" => "Opinionated command-line too to quickly start Juju",
   "juju" => "DevOps management tool",
   "jvmtop" => "Console application to monitor all accessible, running jvms on a machine",
   "jython" => "Python implementation in pure Java (successor to JPython)",
