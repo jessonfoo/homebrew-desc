@@ -79,6 +79,7 @@ The following people have also contributed to the project:
 + [Jeroen](https://github.com/osscca)
 + [Steve Mayer](https://github.com/mayersj1)
 + [Max Nordlund](https://github.com/maxnordlund)
++ [Peter N. Steinmetz](https://github.com/PeterNSteinmetz)
 + [Christian Schwang](https://github.com/CSchwang)
 + [Soulshaker](https://github.com/soulshaker)
 + [John Speno](https://github.com/JohnSpeno)
