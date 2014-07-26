@@ -1833,6 +1833,7 @@ descriptions = {
   "objc-codegenutils" => "Three small tools to help work with Xcode",
   "objc-run" => "Use Objective-C files for shell script-like tasks",
   "objective-caml" => "General purpose programming language in the ML family",
+  "ocamlsdl" => "OCaml interface with the SDL c library",
   "ocp" => "Unix port of the Open Cubic Player",
   "ocrad" => "Optical character recognition (OCR) program",
   "ode" => "Library for simulating articulated rigid body dynamics",
