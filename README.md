@@ -82,6 +82,7 @@ The following people have also contributed to the project:
 + [Peter N. Steinmetz](https://github.com/PeterNSteinmetz)
 + [Christian Schwang](https://github.com/CSchwang)
 + [Soulshaker](https://github.com/soulshaker)
++ [Peter Souter](https://github.com/petems)
 + [John Speno](https://github.com/JohnSpeno)
 + [Mike Warren](https://github.com/workmade)
 + [Humza Yaqoob](https://github.com/secondplanet)
