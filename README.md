@@ -85,6 +85,7 @@ The following people have also contributed to the project:
 + [Peter Souter](https://github.com/petems)
 + [John Speno](https://github.com/JohnSpeno)
 + [Mike Warren](https://github.com/workmade)
++ [Nikolaus Wittenstein](https://github.com/adzenith)
 + [Humza Yaqoob](https://github.com/secondplanet)
 + [Zearin](https://github.com/Zearin)
 
