@@ -1870,6 +1870,7 @@ descriptions = {
   "ntopng" => "Next generation version of the original ntop",
   "nu" => "Object oriented Lisp-like programming language in Objective-C",
   "num-utils" => "Programs for dealing with numbers from the command line",
+  "nut" => "Network UPS Tools: Support for various power devices",
   "nutcracker" => "Proxy for memcached and redis",
   "nuttcp" => "Network performance measurement tool",
   "nvi" => "44BSD re-implementation of vi",
