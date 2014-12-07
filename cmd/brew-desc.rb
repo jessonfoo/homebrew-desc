@@ -42,6 +42,7 @@ descriptions = {
   "aespipe" => "AES encryption or decryption for pipes",
   "afflib" => "Advanced Forensic Format",
   "afio" => "Creates cpio-format archives",
+  "afl-fuzz" => "American fuzzy lop: Security-oriented fuzzer",
   "afsctool" => "Utility for manipulating HFS+ compressed files",
   "aften" => "Audio encoder which generates ATSC A/52 compressed audio streams",
   "afuse" => "Automounting file system implemented in user-space using FUSE",
