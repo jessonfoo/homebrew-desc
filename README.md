@@ -13,7 +13,7 @@ The easiest way to make sure that you're up to date is to run the following:
 
     brew update && brew uninstall brew-desc && brew tap --repair
 
-That should be it. However, if you have any issues, please file an issue.
+That should be it. However, if you have any problems, please file an issue.
 
 ## What is it?
 
