@@ -10,6 +10,8 @@
 #   1. brew desc -s|--search string or regex # search in descriptions
 #   2. brew desc name1 name2...     # get descriptions for one or more items
 # =============================================================================
+require HOMEBREW_LIBRARY_PATH.join('cmd', 'info')
+@info = false
 
 descriptions = {
   "a2ps" => "Any-to-PostScript filter",
@@ -3019,14 +3021,17 @@ descriptions = {
 
 usage = <<EOF
 SYNOPSIS
-    brew desc package-name1 package-name2 ...
+    brew desc [-i|--info] package-name1 package-name2 ...
     brew desc -s|--search string|regex
     brew desc [-h|-?|--help]
 
 USAGE
     The command can be invoked in three ways:
 
-    1. Get descriptions for one or more items you know the names of.
+    1. Get descriptions for one or more items you know the names of. This
+       invocation has an optional flag -i or --info. If the flag is added,
+       you will get a description for each item as well as the output of
+       `brew info item`.
     2. Search for items based on a string or regex after -s or --search.
     3. Pass no arguments or -h, -?, or --help and get this usage message.
 
@@ -3035,11 +3040,19 @@ USAGE
       brew desc mutt abook urlview   # Get descriptions for these three items
       brew desc --search mail        # Search descriptions for 'mail'
       brew desc -s 'ma(il|n)'        # Search descriptions for 'mail' or 'man'
+      brew desc -i mutt              # Get description and info for mutt
 EOF
 
 if ARGV.size < 1 or ['-h', '-?', '--help'].include?(ARGV.first)
   puts usage
-elsif  ARGV.first == '-s' or ARGV.first == '--search'
+end
+
+if ARGV.first == '-i' or ARGV.first == '--info'
+  @info = true
+  ARGV.shift
+end
+
+if  ARGV.first == '-s' or ARGV.first == '--search'
   candidates = descriptions.find_all do |k, v|
     v[/#{ARGV[1]}/i] || k[/#{ARGV[1]}/i]
   end
@@ -3048,7 +3061,7 @@ elsif  ARGV.first == '-s' or ARGV.first == '--search'
 
   candidates.each do |name, desc|
     if desc == ""
-      msg = "#{Tty.yellow}#{name}#{Tty.reset}: No description yet"
+      msg = "#{Tty.yellow}#{name}#{Tty.reset}: No description"
     else
       msg = "#{Tty.white}#{name}#{Tty.reset}: #{desc}"
     end
@@ -3057,13 +3070,13 @@ elsif  ARGV.first == '-s' or ARGV.first == '--search'
   end
 else
   ARGV.formulae.each do |f|
-    f = f.name
+    name = f.name
 
     # Tty.<color> variables taken from HOMEBREW_LIBRARY_PATH/utils.rb
-    if descriptions.key?(f)
-      if descriptions[f].empty?
+    if descriptions.key?(name)
+      if descriptions[name].empty?
         puts <<-EOS.undent
-          #{Tty.yellow}#{f}#{Tty.reset}: No description yet
+          #{Tty.yellow}#{f}#{Tty.reset}: No description
 
           Please consider forking brew-desc and adding a description for
           this formula.
@@ -3071,16 +3084,17 @@ else
           https://github.com/telemachus/homebrew-desc/
         EOS
       else
-        puts "#{Tty.white}#{f}#{Tty.reset}: #{descriptions[f]}"
+        puts "#{Tty.white}#{f}#{Tty.reset}: #{descriptions[name]}"
+        Homebrew.info_formula(f) if @info
       end
     else
       opoo <<-EOS.undent
-        #{f} doesn't appear to be a formula from homebrew/master, which is
-        all that `brew desc` supports at this point.
+        #{Tty.yellow}#{f}#{Tty.reset}: No description
 
-        If you think that #{f} is in homebrew/master, please file an issue
-        at https://github.com/telemachus/homebrew-desc/issues and we'll
-        check.
+        Please consider forking brew-desc and adding a description for
+        this formula.
+
+        https://github.com/telemachus/homebrew-desc/
       EOS
     end
   end
