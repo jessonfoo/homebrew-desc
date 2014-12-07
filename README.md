@@ -1,5 +1,20 @@
 # brew-desc.rb - Searchable descriptions for Homebrew formulas
 
+## NOTICE
+
+`brew desc` has switched to a new upgrade and installation method.
+In a nutshell, you no longer need to *install* `brew desc` in the old way
+(`brew install brew-desc`). Intead, all you need to do is tap this directory
+and the command is *already* installed. In addition, this means that upgrades
+will be delivered automatically whenever you run `brew update`. That is,
+updating `brew` itself will also update this command.
+
+The easiest way to make sure that you're up to date is to run the following:
+
+    brew update && brew uninstall brew-desc && brew tap --repair
+
+That should be it. However, if you have any issues, please file an issue.
+
 ## What is it?
 
 It's an [external command][ec] for [Homebrew][h]. It provides short
@@ -43,20 +58,29 @@ as a Ruby regular expression. So you can even do silly searches like this:
 
 You can install `brew desc` in two ways.
 
-1. Tap this repository and install via `brew` itself.
+1. Tap this repository.
 1. Install manually.
 
 For the first method, do the following:
 
-    brew tap telemachus/homebrew-desc && brew install brew-desc
+    brew tap telemachus/homebrew-desc
 
-For the second method clone or download this repository. Then simply put
-the file `brew-desc.rb` anywhere in your `$PATH`. For example:
+That's it! In addition to being easy, this method has an advantage over the
+manual method described below: once this repo has been tapped, you will
+automatically receive updates to `brew desc` whenever you run `brew update`.
+I highly recommend that you follow this method.
+
+However, if you don't want to tap the repo, there is another option. Clone or
+download this repository, and then put the file `brew-desc.rb` anywhere in your
+`$PATH`. For example:
 
     mv brew-desc.rb ~/bin
 
 Leave the name as is if you follow this method. Homebrew knows how to find
 it.
+
+The major downside to this installation method is that you get no upgrades,
+unless you handle them manually.
 
 Once you've installed via either method, you can use the command as
 described above.
@@ -71,6 +95,7 @@ I edited many items for consistency and length.
 The following people have also contributed to the project:
 
 + [Ismail Badawi](https://github.com/isbadawi)
++ [Xu Cheng](https://github.com/xu-cheng)
 + [coruus](https://github.com/coruus)
 + [Sietse de Kaper](https://github.com/targeter)
 + [Misty De Meo](https://github.com/mistydemeo)

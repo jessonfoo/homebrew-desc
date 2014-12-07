@@ -4,7 +4,7 @@
 #     rm -rf homebrew
 # fi
 
-awk '/^  "/ { print }' brew-desc.rb | sed 's/^  "//' | sed 's/".*$//' \
+awk '/^  "/ { print }' cmd/brew-desc.rb | sed 's/^  "//' | sed 's/".*$//' \
     > done.txt
 
 if [ ! -d homebrew ]; then
