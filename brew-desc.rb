@@ -10,8 +10,7 @@
 #   1. brew desc -s|--search string or regex # search in descriptions
 #   2. brew desc name1 name2...     # get descriptions for one or more items
 # =============================================================================
-require HOMEBREW_LIBRARY_PATH.join('cmd', 'info')
-@info = false
+info = false
 
 descriptions = {
   "a2ps" => "Any-to-PostScript filter",
@@ -3048,7 +3047,8 @@ if ARGV.size < 1 or ['-h', '-?', '--help'].include?(ARGV.first)
 end
 
 if ARGV.first == '-i' or ARGV.first == '--info'
-  @info = true
+  info = true
+  require? HOMEBREW_LIBRARY_PATH.join('cmd', 'info')
   ARGV.shift
 end
 
@@ -3085,7 +3085,7 @@ else
         EOS
       else
         puts "#{Tty.white}#{f}#{Tty.reset}: #{descriptions[name]}"
-        Homebrew.info_formula(f) if @info
+        Homebrew.info_formula(f) if info
       end
     else
       opoo <<-EOS.undent
