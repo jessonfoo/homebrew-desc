@@ -3044,6 +3044,7 @@ EOF
 
 if ARGV.size < 1 or ['-h', '-?', '--help'].include?(ARGV.first)
   puts usage
+  exit
 end
 
 if ARGV.first == '-i' or ARGV.first == '--info'
@@ -3075,7 +3076,7 @@ else
     # Tty.<color> variables taken from HOMEBREW_LIBRARY_PATH/utils.rb
     if descriptions.key?(name)
       if descriptions[name].empty?
-        puts <<-EOS.undent
+        opoo <<-EOS.undent
           #{Tty.yellow}#{f}#{Tty.reset}: No description
 
           Please consider forking brew-desc and adding a description for
