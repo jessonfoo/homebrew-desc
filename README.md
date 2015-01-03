@@ -115,6 +115,7 @@ The following people have also contributed to the project:
 + [John Speno](https://github.com/JohnSpeno)
 + [Mike Warren](https://github.com/workmade)
 + [Nikolaus Wittenstein](https://github.com/adzenith)
++ [Yann-R](https://github.com/Yann-R)
 + [Humza Yaqoob](https://github.com/secondplanet)
 + [Zearin](https://github.com/Zearin)
 
