@@ -22,8 +22,8 @@ descriptions for Homebrew packages. You can also search for packages by
 description. So if you know you want to install a mail program, but you're
 not sure which one, brew-desc is for you.
 
-[ec]: https://github.com/mxcl/homebrew/wiki/External-Commands
-[h]: https://github.com/mxcl/homebrew
+[ec]: https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/External-Commands.md
+[h]: https://github.com/Homebrew/homebrew
 
 ## Usage
 
@@ -99,6 +99,7 @@ The following people have also contributed to the project:
 + [coruus](https://github.com/coruus)
 + [Sietse de Kaper](https://github.com/targeter)
 + [Misty De Meo](https://github.com/mistydemeo)
++ [Baptiste Fontaine](https://github.com/bfontaine)
 + [Magnus Holm](https://github.com/judofyr)
 + [Marek Hrusovsky](https://github.com/xhruso00)
 + [Gregory Igelmund](https://github.com/grekko)
