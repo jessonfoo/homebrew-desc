@@ -128,14 +128,26 @@ more descriptions and send a pull request.
 
 [oops]: https://github.com/telemachus/homebrew-desc/issues/47
 
-The most important style rule: Please keep descriptions &lt; 80 characters.
-That will make the output neater in standard terminal windows.
+However, [Homebrew][h] constantly adds new packages. So at any given time
+I might be behind by a handful of new items. Please feel free to write those up
+as well.
 
-A less important guideline: Please trim out boilerplate. For example,
-nearly all commandline tools claim to be small, simple and fast. I learned
-this by editing thousands of descriptions for this project. Let's just
-agree that Homebrew installs small, simple and fast as the norm. But feel
-free to mention if the package you're describing is large, complicated or
-slow.
+If you are going to contribute to the descriptions in any way, here are my two
+most important rules for description contents: 
+
++ Be brief
++ No advertising or boilerplate
+
+Ideally all descriptions should fit into one average-size terminal window
+(including the name of the piece of software). That means that "name:
+description goes here" should never be longer than around 80 characters. Trim
+relentlessly!
+
+Also please remove all advertising language or boilerplate. For example, nearly
+all command line tools claim to be small, simple and fast. (I learned this by
+editing thousands of descriptions for this project.) Please don't include any
+of this sort of thing. Often if you go to the project's one-line synopsis, this
+will be what you get. In that case, please read further to find a more specific
+description for the item.
 
 Thanks.
