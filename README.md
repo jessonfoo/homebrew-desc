@@ -106,6 +106,7 @@ The following people have also contributed to the project:
 + [Jeroen](https://github.com/osscca)
 + [Steve Mayer](https://github.com/mayersj1)
 + [Max Nordlund](https://github.com/maxnordlund)
++ [David Powell](https://github.com/drpowell)
 + [Hamid Rohani](https://github.com/hamid914)
 + [Peter N. Steinmetz](https://github.com/PeterNSteinmetz)
 + [Christian Schwang](https://github.com/CSchwang)
