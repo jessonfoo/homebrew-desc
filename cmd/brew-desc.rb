@@ -2263,6 +2263,7 @@ descriptions = {
   "redis" => "Persistent key-value database, with built-in net interface",
   "redland" => "RDF Library",
   "redo" => "Implements djb's redo: an alternative to make(1)",
+  "redshift" => "Adjusts color temperature of your screen according to your surroundings",
   "redsocks" => "Transparent socks redirector",
   "redstore" => "Lightweight RDF triplestore powered by Redland",
   "regex-opt" => "Perl-compatible regular expression optimizer",
