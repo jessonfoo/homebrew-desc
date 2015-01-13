@@ -993,6 +993,7 @@ descriptions = {
   "gtk-gnutella" => "Share files in a peer to peer network",
   "gtk-murrine-engine" => "Murrine GTK+ engine",
   "gtkdatabox" => "Widget for live display of large amounts of changing data",
+  "gtkextra" => "Widgets for creating GUI's for GTK+",
   "gtkglarea" => "OpenGL context provider for GTK+",
   "gtkglext" => "OpenGL extension to GTK+",
   "gtkmm" => "C++ interfaces for GTK+ and GNOME",
