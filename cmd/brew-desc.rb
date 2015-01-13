@@ -594,6 +594,7 @@ descriptions = {
   "dterm" => "Terminal emulator for use with xterm and friends",
   "dtrx" => "Intelligent archive extraction",
   "dub" => "Build tool for D projects",
+  "duck" => "Command line interface to Cyberduck, a multi-protocol file transfer tool",
   "duff" => "Quickly find duplicates in a set of files on the command-line",
   "duo_unix" => "Two-factor authentication for SSH",
   "duplicity" => "Bandwidth-efficient encrypted backup",
