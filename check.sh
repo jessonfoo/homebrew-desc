@@ -1,8 +1,4 @@
-#!/usr/bin/env dash
-
-# if [ -d homebrew ]; then
-#     rm -rf homebrew
-# fi
+#!/bin/sh
 
 awk '/^  "/ { print }' cmd/brew-desc.rb | sed 's/^  "//' | sed 's/".*$//' \
     > done.txt
@@ -17,6 +13,5 @@ fi
 ls homebrew/Library/Formula/ | sed 's/\.rb$//' > homebrew.txt
 
 printf "\n# fishfish is an expected diff.\n\n"
-diff done.txt homebrew.txt
-
-# rm -rf homebrew
+diff done.txt homebrew.txt | grep -v '^[0-9]' | \
+    sed 's/^< /Deleted: /' | sed 's/^> /Added: /'
