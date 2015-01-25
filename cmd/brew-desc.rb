@@ -795,6 +795,7 @@ descriptions = {
   "g2" => "Friendly git client",
   "gabedit" => "GUI to computational chemistry packages like Gamess-US, Gaussian, etc",
   "gaffitter" => "Efficiently fits files/folders to Volumes of fixed size (like DVD)",
+  "galen" => "Automated testing of look and feel for responsive websites",
   "gambit-scheme" => "Complete, portable implementation of Scheme",
   "game-music-emu" => "Videogame music file emulator collection",
   "gammaray" => "Examine and manipulate Qt application internals at runtime",
