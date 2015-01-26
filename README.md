@@ -99,6 +99,7 @@ The following people have also contributed to the project:
 + [coruus](https://github.com/coruus)
 + [Sietse de Kaper](https://github.com/targeter)
 + [Misty De Meo](https://github.com/mistydemeo)
++ [Alexandre Espinosa Menor](https://github.com/alexandregz)
 + [Baptiste Fontaine](https://github.com/bfontaine)
 + [Magnus Holm](https://github.com/judofyr)
 + [Marek Hrusovsky](https://github.com/xhruso00)
