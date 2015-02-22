@@ -41,6 +41,7 @@ descriptions = {
   "advancecomp" => "Recompression utilities for .PNG, .MNG, .ZIP and .GZ files",
   "aescrypt-packetizer" => "Encrypt and decrypt using 256-bit AES encryption",
   "aescrypt" => "Program for encryption/decryption",
+  "aeskeyfind" => "Program for automatic key-finding",
   "aespipe" => "AES encryption or decryption for pipes",
   "afflib" => "Advanced Forensic Format",
   "afio" => "Creates cpio-format archives",
