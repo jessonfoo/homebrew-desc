@@ -12,6 +12,5 @@ else
 fi
 ls homebrew/Library/Formula/ | sed 's/\.rb$//' > homebrew.txt
 
-printf "\n# fishfish is an expected diff.\n\n"
 diff done.txt homebrew.txt | grep -v '^[0-9]' | \
     sed 's/^< /Deleted: /' | sed 's/^> /Added: /'
