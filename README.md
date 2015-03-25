@@ -66,7 +66,7 @@ You can install `brew desc` in two ways.
 1. Tap this repository.
 1. Install manually.
 
-### *Method 1:* Install with `brew tap`
+### Method 1: Install with `brew tap`
 
 For the first method, do the following:
 
@@ -77,7 +77,7 @@ manual method described below: once this repo has been tapped, you will
 automatically receive updates to `brew desc` whenever you run `brew update`.
 I highly recommend that you follow this method.
 
-### *Method 2:* Manual Installation
+### Method 2: Manual Installation
 
 However, if you don't want to tap the repo, there is another option. Clone or
 download this repository, and then put the file `brew-desc.rb` anywhere in your
