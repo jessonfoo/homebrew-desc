@@ -1,20 +1,5 @@
 # brew-desc.rb - Searchable descriptions for Homebrew formulas
 
-## NOTICE
-
-`brew desc` has switched to a new upgrade and installation method. In
-a nutshell, you no longer need to *install* `brew desc` in the old way (`brew
-install brew-desc`). Intead, all you need to do is tap this directory and the
-command is *already* installed. In addition, this means that upgrades will be
-delivered automatically whenever you run `brew update`. That is, updating
-`brew` itself will also update this command.
-
-The easiest way to make sure that you're up to date is to run the following:
-
-    brew update && brew uninstall brew-desc && brew tap --repair
-
-That should be it. However, if you have any problems, please file an issue.
-
 ## What is it?
 
 It's an [external command][ec] for [Homebrew][h]. It provides short
@@ -143,26 +128,32 @@ a Pull Request. (However, [Homebrew][h] constantly adds new packages. So, at
 any given time, I might be behind on a handful of new items. Please feel free
 to write those up as well.)
 
-I only have two rules for description contents:
+I only three rules for description contents:
 
-+ Be brief
-+ No advertising or boilerplate
++ Be brief.
++ Remove all advertising or boilerplate.
++ It's 'command-line'.
 
 Here's what I mean...
 
-**Be brief.**  Ideally all descriptions should fit into one average-size
+**Be brief.** Ideally all descriptions should fit into one average-size
 terminal window (including the name of the piece of software).
 
 That means that `"name: description goes here"` should never be longer than
 around 80 characters. Trim relentlessly!
 
-**No adverstising or boilerplate.**  Please remove all advertising language or
-boilerplate. For example, nearly all command line tools claim to be small,
-simple, and fast--so, please don't include any of this sort of thing.  (I
-learned this by editing thousands of descriptions for this project.)
+**Remove all advertising or boilerplate.**  As an example, nearly all command
+line tools claim to be small, simple, and fast. (I learned this by editing
+thousands of descriptions for this project.) Please remove such claims from
+whatever you submit. That leaves more room for substantive description.
 
-Often, if you go to the project's one-line synopsis, this will be what you get.
-If so, please read further about the project until you find a more specific
-description it.
+Often, if you go to the project's one-line synopsis, you will find this kind of
+boilerplate or advertising. If so, please read further about the project until
+you find a more specific description it.
+
+**It's 'command-line'.** This is just a question of consistency. All
+descriptions should use this form rather than 'command line' or 'commandline'.
+If somebody makes a good argument for a different convention, then we can
+switch them all easily enough.
 
 Thanks.
