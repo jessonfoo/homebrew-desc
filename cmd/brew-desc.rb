@@ -3010,6 +3010,7 @@ descriptions = {
   "xmltoman" => "XML to manpage converter",
   "xmount" => "Convert between multiple input and output harddisk image types",
   "xmp" => "Command-line player for module music formats (MOD, S3M, IT, etc)",
+  "xonsh" => "Python-ish, BASHwards-compatible shell language and command prompt",
   "xorriso" => "ISO9660+RR manipulation tool",
   "xplanet" => "Create HQ wallpapers of planet Earth",
   "xplanetfx" => "Configure, run or daemonize xplanet for HQ Earth wallpapers",
