@@ -777,6 +777,7 @@ descriptions = {
   "fourstore" => "Efficient, stable RDF database",
   "fpc" => "Free Pascal: multi-architecture Pascal compiler",
   "fping" => "Scriptable ping program for checking if multiple hosts are up",
+  "fpp" => "Alternative to piping that accepts input and presents a UI for selecting items",
   "frag_find" => "Hash-based carver tool (formerly 'NPS Bloom Filter package')",
   "fragroute" => "Intercepts, modifies, and rewrites egress traffic for a specified host",
   "freealut" => "Implementation of OpenAL's ALUT standard",
