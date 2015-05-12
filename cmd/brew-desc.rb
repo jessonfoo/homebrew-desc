@@ -2745,7 +2745,6 @@ descriptions = {
   "texi2html" => "Convert TeXinfo files to HTML",
   "texinfo" => "Official documentation format of the GNU project",
   "texmath" => "A Haskell library for converting LaTeX math to MathML",
-  "texwrapper" => "Run TeX and tools (like BibTeX or MakeIndex) together",
   "thc-pptp-bruter" => "Brute force program against PPTP VPN endpoints (TCP port 1723)",
   "the_platinum_searcher" => "Multi-platform code-search similar to ack and ag",
   "the_silver_searcher" => "Code-search similar to ack",
