@@ -2190,6 +2190,7 @@ descriptions = {
   "polipo" => "Web caching proxy",
   "polygen" => "Generate random sentences according to a given grammar",
   "polyml" => "Standard ML implementation",
+  "ponyc" => "Object-oriented, actor-model, capabilities-secure programming language",
   "ponysay" => "Cowsay but with ponies",
   "poppler" => "PDF rendering library (based on the xpdf-3.0 code base)",
   "popt" => "Library like getopt(3) with a number of enhancements",
