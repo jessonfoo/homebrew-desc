@@ -2161,6 +2161,7 @@ descriptions = {
   "pk" => "Field extractor command-line utility",
   "pkcs11-helper" => "Library to simplify the interaction with PKCS#11",
   "pkg-config" => "Manage compile and link flags for libraries",
+  "pkgdiff" => "Tool for analyzing changes in software packages (e.g. RPM, DEB, TAR.GZ)",
   "pktanon" => "Packet trace anonymization",
   "plan9port" => "Many Plan 9 programs ported to UNIX-like operating systems",
   "plantuml" => "Draw UML diagrams",
