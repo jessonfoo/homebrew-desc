@@ -11,6 +11,7 @@
 #   1. brew desc -s|--search string or regex # search in descriptions
 #   2. brew desc name1 name2...     # get descriptions for one or more items
 # =============================================================================
+require "optparse"
 
 descriptions = {
   "a2ps" => "Any-to-PostScript filter",
@@ -2644,7 +2645,6 @@ descriptions = {
   "ssldump" => "SSLv3/TLS network protocol analyzer",
   "sslh" => "Forward connections based on first data packet sent by client",
   "sslmate" => "Buy SSL certs from the command-line",
-  "sslscan" => "SSL scanner",
   "sslyze" => "SSL scanner",
   "ssreflect" => "Virtual package provided by libssreflect-coq",
   "ssss" => "Shamir's secret sharing scheme implementation",
@@ -2687,6 +2687,7 @@ descriptions = {
   "swatchbooker" => "Reads color swatches from various file formats",
   "swfmill" => "xml2swf and swf2xml processor",
   "swftools" => "SWF manipulation and generation tools",
+  "swiftlint" => "Experimental tool to enforce Swift style and conventions",
   "swig" => "Generate scripting interfaces to C/C++ code",
   "swish-e" => "System for indexing collections of web pages",
   "switchaudio-osx" => "Change OS X audio source from the command-line",
@@ -3104,38 +3105,107 @@ descriptions = {
   "zzuf" => "A transparent application input fuzzer",
 }
 
-usage = <<EOF
+usage = <<EOS
 SYNOPSIS
+
     brew desc package-name1 package-name2 ...
     brew desc -s|--search string|regex
+    brew desc -n|--name string|regex
+    brew desc -d|--desc string|regex
     brew desc [-h|-?|--help]
 
 USAGE
-    The command can be invoked in three ways:
 
-    1. Get descriptions for one or more items you know the names of.
-    2. Search for items based on a string or regex after -s or --search.
-    3. Pass no arguments or -h, -?, or --help and get this usage message.
+    brew desc provides brief descriptions of the software that brew installs.
 
-    Examples:
+    For cases where you know the items you want described, simply pass one or
+    more names directly to brew desc.
 
-      brew desc mutt abook urlview   # Get descriptions for these three items
-      brew desc --search mail        # Search descriptions for 'mail'
-      brew desc -s 'ma(il|n)'        # Search descriptions for 'mail' or 'man'
-EOF
+    Alternatively, you can search available formulas for what you want using
+    a flag. The -s|--search flag looks for matches in names and descriptions
+    of brew software. The -n|--name flag limits the search to software names,
+    and the -d|--desc flag restricts the search to software descriptions.
 
-if ARGV.size < 1 or ['-h', '-?', '--help'].include?(ARGV.first)
-  puts usage
-elsif  ARGV.first == '-s' or ARGV.first == '--search'
-  candidates = descriptions.find_all do |k, v|
-    v[/#{ARGV[1]}/i] || k[/#{ARGV[1]}/i]
+    Each of these three flags requires an argument. The argument can be
+    a simple string or a regular expression. (If you use a regex, place it in
+    single quotes to protect it from your shell.) All searches are treated as
+    case insensitive.
+
+FLAGS
+
+    -s, --search WANTED         Search both names and descriptions for WANTED
+    -n, --name WANTED           Search only names for WANTED
+    -d, --desc WANTED           Search only descriptions for WANTED
+    -h, --help, -?              Show this help message
+
+EXAMPLES
+
+    brew desc mutt abook        # Get descriptions for these items
+    brew desc --search mail     # Search for 'mail' in names and descriptions
+    brew desc -s 'ma(il|n)'     # Search for 'mail' or 'man'
+    brew desc -n mail           # Search only package names for 'mail'
+    brew desc -d mail           # Search only package descriptions for 'mail'
+EOS
+
+too_many_flags = <<EOS
+The -s, -n, and -d options are mutually exclusive.
+
+#{usage}
+EOS
+
+options = {}
+OptionParser.new do |opts|
+  options[:search] = 0
+  opts.banner = usage
+
+  opts.on("-?", "-h", "--help", "Display this help message") do
+    puts opts
+    exit
+  end
+
+  opts.on("-s", "--search WANTED", "Search names and descriptions") do |w|
+    options[:search] += 1
+    options[:wanted] = w
+  end
+
+  opts.on("-d", "--description WANTED", "Search only descriptions") do |w|
+    options[:search] += 1
+    options[:search_type] = :description
+    options[:wanted] = w
+  end
+
+  opts.on("-n", "--name WANTED", "Search only names") do |w|
+    options[:search] += 1
+    options[:search_type] = :name
+    options[:wanted] = w
+  end
+
+  options
+end.parse!
+
+if options[:search] > 1
+  odie too_many_flags
+elsif options[:search] == 1
+  if options[:search_type] == :name
+    candidates = descriptions.find_all do |n, d|
+      n[/#{options[:wanted]}/i]
+    end
+  elsif options[:search_type] == :description
+    candidates = descriptions.find_all do |n, d|
+      d[/#{options[:wanted]}/i]
+    end
+  else
+    candidates = descriptions.find_all do |n, d|
+      n[/#{options[:wanted]}/i] || d[/#{options[:wanted]}/i]
+    end
   end
 
   candidates.sort! {|a,b| a[0] <=> b[0]}
 
+  # Tty.<color> variables taken from HOMEBREW_LIBRARY_PATH/utils.rb
   candidates.each do |name, desc|
-    if desc == ""
-      msg = "#{Tty.yellow}#{name}#{Tty.reset}: No description yet"
+    if desc.empty?
+      msg = "#{Tty.yellow}#{name}#{Tty.reset}: no description yet"
     else
       msg = "#{Tty.white}#{name}#{Tty.reset}: #{desc}"
     end
@@ -3143,33 +3213,15 @@ elsif  ARGV.first == '-s' or ARGV.first == '--search'
     puts msg
   end
 else
-  ARGV.formulae.each do |f|
-    f = f.name
-
-    # Tty.<color> variables taken from HOMEBREW_LIBRARY_PATH/utils.rb
-    if descriptions.key?(f)
-      if descriptions[f].empty?
-        puts <<-EOS.undent
-          #{Tty.yellow}#{f}#{Tty.reset}: No description yet
-
-          Please consider forking brew-desc and adding a description for
-          this formula.
-
-          https://github.com/telemachus/homebrew-desc/
-        EOS
+  ARGV.each do |candidate|
+    if descriptions.key?(candidate)
+      if descriptions[candidate].empty?
+        puts "#{Tty.yellow}#{candidate}#{Tty.reset}: no description yet"
       else
-        puts "#{Tty.white}#{f}#{Tty.reset}: #{descriptions[f]}"
+        puts "#{Tty.white}#{candidate}#{Tty.reset}: #{descriptions[candidate]}"
       end
     else
-      opoo <<-EOS.undent
-        #{f} doesn't appear to be a formula from homebrew/master, which is
-        all that `brew desc` supports at this point.
-
-        If you think that #{f} is in homebrew/master, please file an issue
-        at https://github.com/telemachus/homebrew-desc/issues and we'll
-        check.
-      EOS
+      opoo "#{candidate} is not a recognized formula name"
     end
   end
 end
-
