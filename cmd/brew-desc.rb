@@ -11,7 +11,7 @@
 #   1. brew desc -s|--search string or regex # search in descriptions
 #   2. brew desc name1 name2...     # get descriptions for one or more items
 # =============================================================================
-require 'optparse'
+require "optparse"
 
 descriptions = {
   "a2ps" => "Any-to-PostScript filter",
@@ -3121,19 +3121,21 @@ USAGE
     For cases where you know the items you want described, simply pass one or
     more names directly to brew desc.
 
-    Alternatively, you can search for what you want using a search flag. The
-    The -s|--search flag looks for matches in both names and descriptions of
-    brew software. The -n|--name flag limits the search to software names, and
-    the -d|--desc flag restricts the search to software descriptions.
+    Alternatively, you can search available formulas for what you want using
+    a flag. The -s|--search flag looks for matches in names and descriptions
+    of brew software. The -n|--name flag limits the search to software names,
+    and the -d|--desc flag restricts the search to software descriptions.
 
-    Each of the search flags accepts a string or regex to search for. All the
-    searches are case insensitive.
+    Each of these three flags requires an argument. The argument can be
+    a simple string or a regular expression. (If you use a regex, place it in
+    single quotes to protect it from your shell.) All searches are treated as
+    case insensitive.
 
 FLAGS
 
     -s, --search WANTED         Search both names and descriptions for WANTED
     -n, --name WANTED           Search only names for WANTED
-    -d, --desc WANTED           Search only descriptions for wanted
+    -d, --desc WANTED           Search only descriptions for WANTED
     -h, --help, -?              Show this help message
 
 EXAMPLES
@@ -3143,6 +3145,12 @@ EXAMPLES
     brew desc -s 'ma(il|n)'     # Search for 'mail' or 'man'
     brew desc -n mail           # Search only package names for 'mail'
     brew desc -d mail           # Search only package descriptions for 'mail'
+EOS
+
+too_many_flags = <<EOS
+The -s, -n, and -d options are mutually exclusive.
+
+#{usage}
 EOS
 
 options = {}
@@ -3176,11 +3184,7 @@ OptionParser.new do |opts|
 end.parse!
 
 if options[:search] > 1
-  odie <<EOF
-The -s, -n, and -d options are mutually exclusive.
-
-#{usage}
-EOF
+  odie too_many_flags
 elsif options[:search] == 1
   if options[:search_type] == :name
     candidates = descriptions.find_all do |n, d|
@@ -3200,8 +3204,8 @@ elsif options[:search] == 1
 
   # Tty.<color> variables taken from HOMEBREW_LIBRARY_PATH/utils.rb
   candidates.each do |name, desc|
-    if desc == ""
-      msg = "#{Tty.yellow}#{name}#{Tty.reset}: No description yet"
+    if desc.empty?
+      msg = "#{Tty.yellow}#{name}#{Tty.reset}: no description yet"
     else
       msg = "#{Tty.white}#{name}#{Tty.reset}: #{desc}"
     end
@@ -3209,29 +3213,15 @@ elsif options[:search] == 1
     puts msg
   end
 else
-  ARGV.each do |f|
-    if descriptions.key?(f)
-      if descriptions[f].empty?
-        puts <<-EOS.undent
-          #{Tty.yellow}#{f}#{Tty.reset}: No description yet
-
-          Please consider forking brew-desc and adding a description for this
-          formula.
-
-          https://github.com/telemachus/homebrew-desc/
-        EOS
+  ARGV.each do |candidate|
+    if descriptions.key?(candidate)
+      if descriptions[candidate].empty?
+        puts "#{Tty.yellow}#{candidate}#{Tty.reset}: no description yet"
       else
-        puts "#{Tty.white}#{f}#{Tty.reset}: #{descriptions[f]}"
+        puts "#{Tty.white}#{candidate}#{Tty.reset}: #{descriptions[candidate]}"
       end
     else
-      opoo <<-EOS.undent
-        #{f} doesn't appear to be a formula from homebrew/master, which is
-        all that `brew desc` supports at this point.
-
-        If you think that #{f} is in homebrew/master, please file an issue at
-        https://github.com/telemachus/homebrew-desc/issues.
-      EOS
+      opoo "#{candidate} is not a recognized formula name"
     end
   end
 end
-
