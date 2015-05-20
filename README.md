@@ -26,7 +26,7 @@ that's easy:
 
 ### Search Package Descriptions
 
-If you don't know the package name, but are looking for packages with
+If you don't know the package name, but are looking for packages with names or
 descriptions that contain a certain phrase, you can do that, too:
 
     $ brew desc -s key-value
@@ -34,7 +34,9 @@ descriptions that contain a certain phrase, you can do that, too:
     kumofs: A scalable and highly available distributed key-value store
     cassandra: Highly scalable, eventually consistent, distributed key-value store
 
-Both `-s` and `--search` are acceptable. Searches are always case insensitive.
+Both `-s` and `--search` are acceptable. Searches are always case insensitive,
+and searches with `-s` or `--search` look at the names and the descriptions of
+packages.
 
 The argument passed to `-s` or `--search` is interpreted as a Ruby regular
 expression. So you can even do silly searches like this:
@@ -43,6 +45,10 @@ expression. So you can even do silly searches like this:
     abnfgen: Quickly generate random documents that match an ABFN grammar
     aescrypt: Program for encryption/decryption
     ...<way too much output>
+
+If you want to search only names or only descriptions, `brew desc` has you
+covered. Use the `-n` or `--names` flag to search only names. Use `-d` or
+`--desc` to search only descriptions.
 
 ## Installation
 
@@ -98,6 +104,7 @@ The following people have also contributed to the project:
 + [Marek Hrusovsky](https://github.com/xhruso00)
 + [Gregory Igelmund](https://github.com/grekko)
 + [Jeroen](https://github.com/osscca)
++ [Dan Martinez](https://github.com/hivehand)
 + [Steve Mayer](https://github.com/mayersj1)
 + [Max Nordlund](https://github.com/maxnordlund)
 + [David Powell](https://github.com/drpowell)
