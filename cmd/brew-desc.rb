@@ -3156,10 +3156,9 @@ EOS
 options = {}
 OptionParser.new do |opts|
   options[:search] = 0
-  opts.banner = usage
 
   opts.on("-?", "-h", "--help", "Display this help message") do
-    puts opts
+    puts #{usage}
     exit
   end
 
