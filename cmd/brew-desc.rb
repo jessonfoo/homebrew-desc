@@ -3158,7 +3158,7 @@ OptionParser.new do |opts|
   options[:search] = 0
 
   opts.on("-?", "-h", "--help", "Display this help message") do
-    puts #{usage}
+    puts usage
     exit
   end
 
