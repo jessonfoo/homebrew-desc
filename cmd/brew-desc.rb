@@ -1111,6 +1111,7 @@ descriptions = {
   "htmldoc" => "Convert HTML to PDF or PostScript",
   "htop-osx" => "Improved top (interactive process viewer) for OS X",
   "htpdate" => "Synchronize time with remote web servers",
+  "http-parser" => "HTTP request/response parser for c",
   "http_load" => "Test throughput of a web server by running parallel fetches",
   "httperf" => "Tool for measuring webserver performance",
   "httpie" => "A user-friendly cURL replacement (command-line HTTP client)",
