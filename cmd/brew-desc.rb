@@ -2153,6 +2153,7 @@ descriptions = {
   "pig" => "Platform for analyzing large data sets",
   "pigz" => "Parallel gzip",
   "pike" => "Dynamic programming language",
+  "pillar" => "Manage migrations for Cassandra data stores",
   "pincaster" => "Nosql database with a HTTP/JSON interface",
   "pinentry-mac" => "Pinentry for GPG on Mac",
   "pinentry" => "Passphrase entry dialog utilizing the Assuan protocol",
