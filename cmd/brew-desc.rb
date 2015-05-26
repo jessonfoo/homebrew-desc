@@ -1047,6 +1047,7 @@ descriptions = {
   "gtmess" => "Console MSN messenger client",
   "gts" => "GNU triangulated surface library",
   "guile" => "GUILE: GNU Ubiquitous Intelligent Language for Extensions",
+  "gumbo-parser" => "C99 library for parsing HTML5",
   "gupnp-av" => "Library to help implement UPnP A/V profiles",
   "gupnp" => "Framework for creating UPnP devices and control points",
   "gvp" => "Go versioning packager",
