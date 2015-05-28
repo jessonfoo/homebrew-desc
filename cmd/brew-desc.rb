@@ -2846,6 +2846,7 @@ descriptions = {
   "tuntap" => "Virtual network interfaces for OS X",
   "tup" => "File-based build system",
   "tutum" => "Docker platform for dev and ops",
+  "tvnamer" => "Automatic TV episode file renamer that uses data from thetvdb.com",
   "twemcache" => "Twitter fork of memcached",
   "two-lame" => "Optimized MPEG Audio Layer 2 (MP2) encoder",
   "txt2man" => "Convert flat ASCII text to man page format",
