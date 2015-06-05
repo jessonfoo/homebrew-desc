@@ -1,5 +1,26 @@
 # brew-desc.rb - Searchable descriptions for Homebrew formulas
 
+## NOTICE
+
+Big news: `brew desc` [has been merged into `brew` itself][merge]. This is
+great news! A very big thanks to all the [contributors][contribs] for providing
+descriptions and code over the years. In particular, thank you to [Nikolaus
+Wittenstein][adzenith]. He created the script that spliced descriptions from
+`brew desc` and placed them into their respective formulas, and he also made
+the pull request that eventually brought `brew desc` into `brew`.
+
+The big question now is what's next for `brew desc`. To be honest, I'm not
+sure. I will likely sunset it, but not immediately. For the moment, I will
+continue to maintain it: adding new descriptions and removing deleted programs.
+If anyone has suggestions—or would like to do anything with this code—please
+let me know.
+
+Again, thanks for help over the years.
+
+[merge]: https://github.com/Homebrew/homebrew/pull/39911#issuecomment-109298515
+[contribs]: https://github.com/telemachus/homebrew-desc#contributors
+[adzenith]: https://github.com/adzenith
+
 ## What is it?
 
 It's an [external command][ec] for [Homebrew][h]. It provides short
@@ -120,7 +141,6 @@ The following people have also contributed to the project:
 + [Yann-R](https://github.com/Yann-R)
 + [Humza Yaqoob](https://github.com/secondplanet)
 + [Zearin](https://github.com/Zearin)
-
 
 ## Contributing
 
