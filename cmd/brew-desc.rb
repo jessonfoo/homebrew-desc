@@ -284,7 +284,7 @@ descriptions = {
   "cadubi" => "Creative ASCII drawing utility",
   "cairo" => "Vector graphics library with cross-device output support",
   "cairomm" => "Vector graphics library with cross-device output support",
-  "cake" -> "Build automation system with a C# DSL",
+  "cake" => "Build automation system with a C# DSL",
   "calabash" => "An XProc (XML Pipeline Language) implementation",
   "calc" => "Arbitrary precision calculator",
   "calcurse" => "Text-based personal organizer",
